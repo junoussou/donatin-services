@@ -1,0 +1,396 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  z-index: 1;
+  background-color: rgba(100, 100, 100, .2);
+}
+p.utilisateur{
+  width: 50%;
+  text-align: center;
+  line-height: 50px;
+  outline: 1px solid transparent;
+  font-size: 20px;
+  font-weight: bold;
+  transform: translateX(50%);
+  background-color: rgba(40, 44, 52, .1);
+  text-transform: uppercase;
+}
+strong{
+  font-size: 18px;
+  font-weight: bold;
+}
+form{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+fieldset.inscrip{
+  width: 100%;
+  margin-top: 10px;
+}
+#numInscrip{
+  text-align: center;
+}
+#numInscrip:hover{
+  background-color: #999;
+  color: #fff;
+}
+fieldset.inscrip > fieldset.tontine{
+  margin: 0 5px;
+  padding: 0 5px 5px 15px;
+}
+/*infos client*/
+fieldset.inscrip > fieldset.client{
+  width: 40%;
+  float: left;
+  margin: 0 5px;
+  padding: 0 5px 5px 15px;
+}
+fieldset.client input{
+  line-height: 45px;
+  width: 300px;
+  margin: 3px 5px;
+  font-size: 15px;
+}
+/*infos tontine*/
+fieldset.inscrip > fieldset.tontine input[type='text'], input[type='number']{
+  line-height: 30px;
+  width: 200px;
+  font-size: 15px;
+  margin: 3px 5px;
+}
+.selection{
+  font-size: 13px;
+  width: 100%;
+  padding: 0 10px;
+}
+fieldset.inscrip > fieldset.tontine input[name='obj']{
+  width: 570px;
+}
+/*input*/
+input[type='text'], input[type='number'], input[type='tel']{
+  border-top: 0;
+  border-right: 0;
+  border-bottom: .5px solid #000;
+  border-left: 0;
+  background-color: transparent;
+}
+/*bouton submit*/
+form.listParAgent input[type='submit'], form.listParAgent select, button[name="button"]{
+  width: 10%;
+}
+fieldset.inscrip input[type='submit']{
+  width: 40%;
+}
+fieldset.inscrip input[type='submit'], form.listParAgent input[type='submit'], form.listParAgent select, button[name="button"]{
+  font-size: 15px;
+  outline: 10px;
+  margin: 10px;
+  float: right;
+  height: 30px;
+}
+form.listParAgent input[type="submit"]{
+  width: 20%;
+  cursor: pointer;
+}
+fieldset.inscrip input[type='submit']:hover{
+  cursor: pointer;
+}
+/*consultation*/
+div.liste > div.tableau > table{
+  width: 100%;
+}
+div.liste > div.tableau > table td, .tableSearch td{
+  outline: 1px solid black;
+}
+div.liste > div.tableau > table > thead td, div.liste > div.tableau > table > tfoot td, .tableSearch thead, .num_icon, .tableSearch tfoot tr{
+  text-align: center;
+  font-weight: bold;
+}
+div.liste > div.tableau > table > tfoot tr, .tableSearch tfoot tr{
+  line-height: 50px;
+}
+.num_icon > a{
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+#num, #s_num{
+  width: 5%;
+}
+#obj, #s_obj{
+  width: 20%;
+}
+#nbreMise, #s_nbreMise, #mise, #s_mise, #montMise, #s_montMise, #cliSF, #s_cliSF, #cliSP, #s_cliSP, #nbreJours, #s_nbreJours{
+  width: 5%;
+}
+#tel, #s_tel, #qtier, #s_qtier{
+  width: 8%;
+}
+#statCli, #s_statCli{
+  width: 10%;
+}
+div.liste > div.tableau > table > tbody td, .tableSearch tbody td{
+  line-height: 30px;
+  padding-right: 5px;
+}
+.celcentre{
+  text-align: center;
+}
+/*conteneur titre*/
+div.liste > div.conteneur{
+  line-height: 40px;
+  margin: 10px;
+}
+div.liste > div.conteneur > div.search{
+  float: right;
+  width: 30%;
+  padding: 15px;
+}
+div.liste > div.conteneur > div.titre{
+  width: 70%;
+  text-align: center;
+  padding: 15px;
+}
+div.liste > div.conteneur > div.search input{
+  height: 40px;
+  width: 70%;
+  border-radius: 5px;
+  margin: 0 0 0 5%;
+  padding: 10px;
+}
+div.liste > div.conteneur > div.search button{
+  height: 30px;
+  width: 10%;
+  border-radius: 5px;
+  margin: 0;
+  padding: 10px;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+div.liste > div.conteneur > div.search button i{
+  font-size: 150%;
+}
+div.liste > div.conteneur > div.search button:hover{
+  border-radius: 5px;
+  text-shadow: 1px 1px black;
+}
+div.liste > div.conteneur > div.titre #titre_tableau{
+  text-transform: uppercase;
+  word-spacing: 10px;
+  letter-spacing: 2px;
+}
+/*search*/
+.tableSearch{
+  width: 100%;
+  margin: 3% 0;
+}
+#result{
+  width: 100%;
+  text-align: center;
+}
+div.notAuthorized{
+  transform: translateX(50%);
+  width: 50%;
+  margin: 50px 10px;
+  line-height: 50px;
+  font-size: 20px;
+  text-align: center;
+  outline: 1px solid black;
+  background-color: rgb(187, 33, 44);
+  color: rgb(200, 200, 200);
+  border-radius: 10px;
+  padding-left: 15px;
+}
+form.listParAgent{
+  transform: translateX(25%);
+  margin-top: 30px;
+  margin-left: 60px;
+  height: 60px;
+  width: 70%;
+  padding-top: 5px;
+  float: left;
+}
+form.listParAgent select{
+  width: 30%;
+  padding-left: 15px;
+}
+form.listParAgent label[for="agent"]{
+  float: left;
+  margin-top: 10px;
+  line-height: 30px;
+}
+form.listParAgent input[type='submit'], form.listParAgent select{
+  float: left;
+}
+table.listeParAgent caption{
+  padding: 20px;
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+}
+table.table_para{
+  width: 100%;
+}
+table.table_para thead, table.table_para tfoot{
+  font-weight: bold;
+  text-align: center;
+}
+table.table_para tr td{
+  outline: 1px solid black;
+  line-height: 25px;
+}
+table.table_para #sup{
+  width: .5%;
+}
+table.table_para tbody .phoneC, table.table_para tbody .pseudoC{
+  width: 10%;
+  text-align: center;
+}
+.actionIn{
+  margin-left: 5px;
+  font-size: 13px;
+}
+.slider{
+  z-index: 1;
+  width: 550px;
+  overflow: hidden;
+  margin: 20px auto;
+}
+.slides{
+  width: calc(550px * 7);
+  animation: glisse 120s infinite;
+}
+.slide{
+  float: left;
+}
+@keyframes glisse{
+  0%{
+    transform: translateX(0);
+  }
+  7%{
+    transform: translateX(0);
+  }
+  14%{
+    transform: translateX(-550px);
+  }
+  21%{
+    transform: translateX(-1100px);
+  }
+  28%{
+    transform: translateX(-1650px);
+  }
+  35%{
+    transform: translateX(-2200px);
+  }
+  42%{
+    transform: translateX(-2750px);
+  }
+  49%{
+    transform: translateX(-3300px);
+  }
+  56%{
+    transform: translateX(-3300px);
+  }
+  63%{
+    transform: translateX(-2750px);
+  }
+  70%{
+    transform: translateX(-2200px);
+  }
+  77%{
+    transform: translateX(-1650px);
+  }
+  84%{
+    transform: translateX(-1100px);
+  }
+  91%{
+    transform: translateX(-550px);
+  }
+  98%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+#lg:hover{
+  background-color: transparent;
+}
+#nomSupp, #objSupp{
+  width: 10%;
+}
+section > h1{
+  width: 75%;
+  transform: translateX(17%);
+  background: rgba(40, 44, 52, .1);
+  word-spacing: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 50px;
+  font-size: 30px;
+  text-align: center;
+  margin-top: -50px;
+}
+section > table.hist{
+  width: 100%;
+}
+section > table.hist > thead > tr{
+  width: 20%;
+  line-height: 40px;
+}
+.hist thead, .foot{
+  font-weight: bold;
+}
+.hist thead{
+  text-transform: uppercase;
+}
+.hist tr td{
+  outline: 1px solid black;
+  text-align: center;
+}
+.tableHist{
+  width: 99%;
+}
+.tableHist td{
+  width: 50%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.histPeri{
+  text-transform: uppercase;
+  margin: 1px 5px;
+  width: 100%;
+}
+.histPeri input, .selectAgent, .motifHis{
+  line-height: 30px;
+  height: 30px;
+  width: 25%;
+  margin-left: 2%;
+}
+.histPeri fieldset{
+  width: 100%;
+  padding: 10px 5px;
+}
+input[name="enregis"]{
+  padding: 8px;
+  float: right;
+  margin-right: 1%;
+  cursor: pointer;
+}
+input[name="enregSalaire"], input[name="enregis"]{
+  width: 15%;
+}
+.histPeri input[type="submit"]{
+  width: 20%;
+}
+.histPeri input[type="submit"], input[name="enregSalaire"]{
+  cursor: pointer;
+  padding: 8px;
+  float: right;
+  margin-right: 2%;
+}
+.peri{
+  width: 20%;
+}
